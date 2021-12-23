@@ -1,0 +1,96 @@
+[
+    {
+        "id": "4e1010a197026aaa",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4dd43379b5937b98",
+        "type": "mqtt in",
+        "z": "4e1010a197026aaa",
+        "name": "",
+        "topic": "quanam",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "1f624c8953f39d2e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "0e19ac0043fba706"
+            ]
+        ]
+    },
+    {
+        "id": "0e19ac0043fba706",
+        "type": "csv",
+        "z": "4e1010a197026aaa",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "2087ea97501cc96a"
+            ]
+        ]
+    },
+    {
+        "id": "2087ea97501cc96a",
+        "type": "file",
+        "z": "4e1010a197026aaa",
+        "name": "",
+        "filename": "C:\\Users\\monassakorc\\Documents\\cursosonline\\maratona3ed\\desafio2\\hospital.csv",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 830,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f624c8953f39d2e",
+        "type": "mqtt-broker",
+        "name": "quanan",
+        "broker": "iot.maratona.dev",
+        "port": "31666",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]
