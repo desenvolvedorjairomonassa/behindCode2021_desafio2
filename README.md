@@ -10,4 +10,6 @@ serveless.js -> serveless em javascript
 
 hospital.csv - > data feed from sensor IOT
 
+notebookdesafio2.ipynb - NOTEBOOK
+
 
