@@ -8,4 +8,6 @@ nodered-flows.json --> json from flow of nodered in order to catch sensor's iot
 
 serveless.js -> serveless em javascript
 
+hospital.csv - > data feed from sensor IOT
+
 
