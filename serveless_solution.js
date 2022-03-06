@@ -7,12 +7,21 @@
   * @param As ações do Cloud Functions aceitam um único parâmetro, que deve ser um objeto JSON.
   *
   * @return A saída dessa ação, que deve ser um objeto JSON.
-  * 
-
+  *  ex
+  *	{
+  *	  "room": "bathroom-main",
+  *	  "values": {
+  *	    "co2": 400,
+  *	    "temperature": 22,
+  *	    "humidity": 70,
+  *	    "sound": 30,
+  *	    "illumination": 150
+  *	  }
+  *	}
   *
   */
 function main(params) {
-    let alertas = []
+    let alerts = []
     if (!params || Object.keys(params).length === 0 ) return { alertas }
     let dados = params
     if (!dados.room) return {alertas}
